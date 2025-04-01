@@ -10,6 +10,7 @@ int main()
     cout << "Enter name: " << endl;
     cin >> name;
 
-    cout << "Name is: " + name;
+    cout << "Name is: " + name << endl;
+    // cout << "Name is: " << name << endl; //This works as well
 }
 //comment
