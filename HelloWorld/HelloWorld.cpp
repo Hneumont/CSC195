@@ -5,6 +5,11 @@ int main()
 {
     cout << "Hello World!" << endl;
     cout << "Git is now tracking this project!" << endl;
-    return 0;
+    
+    string name;
+    cout << "Enter name: " << endl;
+    cin >> name;
+
+    cout << "Name is: " + name;
 }
 //comment
