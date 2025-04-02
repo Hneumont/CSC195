@@ -3,9 +3,13 @@
 using namespace std;
 int main()
 {
-    cout << "Hello World!\n";
+    string name;
+    char initial;
+    short age;
+    bool isAdult;
+    unsigned int zipcode; 
+    float wage;
+    short daysWorked;
+    float hoursWorkedPerDay[7];
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
