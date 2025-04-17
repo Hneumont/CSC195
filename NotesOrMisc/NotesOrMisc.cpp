@@ -93,7 +93,7 @@ int main()
 
     /*
     * Heap:
-    * 
+    * Dynamic memory allocation, must be freed/created and is typically used during runtime NOT during compile
     */
 
     /*
@@ -155,4 +155,110 @@ int main()
     * deque - map - unordered_map
     * forward_list - multimap -unordered map
     * list - - 
+    */
+
+    /*
+    * for loops:
+    * for (int i = 0; i < VALUE; i++)
+    * 
+    * Each loops:
+    * Ex.:
+    * for(string fruit : fruits)
+    * {
+    *   cout << chemical << endl;
+    * }
+    */
+
+    /*
+    * Object Oriented Programming:
+    * 
+    * creating objects that contain both data and functions;
+    * programming paradigm based on the concept of "objects", which can contain data and code:
+    * data in the form of fields (often known as attributes, members or properties), and code,
+    * in the form of procedures (often known as methods or functions).
+    * 
+    * 
+    * Procedual Programming:
+    * Writing procedures or functions that perform operations on the data
+    * 
+    * Class:
+    * The blueprint of the object with the data members and member functions of the class.
+    * 
+    * Object/Instance:
+    * The realization of a class. The creation of an instance is called instantiation.
+    * 
+    * 
+    * ------------------------------------------------------
+    * Encapsulation:
+    * creates a limited access structure, typically for security reasons so as to not intrude on
+    * code that shouldn't be called;
+    * 'Refers to the building of data with the methods that operate on that data'
+    * 
+    * Abstraction:
+    * Allows varying access to internal state of a class,
+    * opposite of encapsulation;
+    * 'shows only essential attributes and hides unnecessary information; 
+    * hiding unnecessary details from users'
+    * 
+    * Inheritance:
+    * Creates a hierarchy, linking parent/child classes;
+    * child classes inherit from parent classes, obtaining their methods and variables.
+    * 
+    * Polymorphism:
+    * Overriding functionality when inheriting
+    * 'Stands for many forms;
+    * a call to a member function will cause a different function to be executed 
+    * depending on the type of object that invokes the function.'
+    * 
+    * Virtual function:
+    * a virtual function is a member function which is declared within a parent class
+    * and is re-difined (overriden) by a child/derived class. when you refer to a derived class
+    * object using a pointer or a reference to the base class, you can call a virtual function
+    * for that object and execute the derived class's version of the function.
+    */
+
+    /*
+    * A class in C++ is a user-defined type or data structure
+    * declared with keyword class that has data and functions
+    * 
+    * 
+    * 
+    * A class member function can be declared in the class body and have its definition outside the body.
+    * 
+    * 
+    * To access the members of a class through an instance of the class use the '.' for the object
+    * or the '->' for a pointer to the object.
+    * (Ex.: 
+    *  class.function();
+    *  class->function();
+    * )
+    * 
+    * 
+    * CONSTRUCTOR:
+    * A class constructor is a special member function of a class that is executed
+    * whenever we create new objects of that class. it has the same name as the class and no return type.
+    * 
+    * (Ex.:
+    * 
+    * Class myClass
+    * {
+    * public:
+    * myClass() {} // default constructor
+    * myClass() : my_data(30) {} // sets 'my_data' int variable to 30 
+    * myClass() { my_data = 30; } // same as ^
+    * myClass(int data) : my_data(data) {} // sets 'my_data' int variable to user-defined paramater intake
+    * 
+    * protected:
+    * int my_data = 0;
+    * }
+    * 
+    * )
+    * 
+    * DESTRUCTOR:
+    * A class destructor is a special member function of a class that is executed whenever an object is
+    * destroyed. It has th same name as the class and no return type.
+    * 
+    * (Ex.:
+    * ~myClass() // ~ distinguishes a destructor from a constructor
+    * )
     */
