@@ -279,3 +279,63 @@ ostream - reads information from user code and displays it onto the terminal
 * 
 * 
 */
+
+
+/*
+* TEMPLATE:
+* 
+* 
+* #include <iostream>
+* 
+* using namespace std;
+* 
+* int max(int i1, int i2)
+* {
+*   return(i1 > i2) ? i1: i2; //ternary operation (? = return when true : = return when false)
+* }
+* 
+* int main()
+* {
+*   cout << max(32, 22); //returns 32
+*   
+*   cout << max(6.34f, 6.56f); //returns 6.34, uses default method, not created one
+* }
+* 
+* ------------
+* 
+* #include <iostream>
+* 
+* using namespace std;
+* 
+* namespace myMath
+* {
+*   int max(int i1, int i2)
+*   {
+*       return(i1 > i2) ? i1: i2; //ternary operation (? = return when true : = return when false)
+*   }
+* }
+* 
+* int main()
+* {
+*    cout << myMath::max(5.3f,24.3f)
+* }
+*
+*
+* 
+* template<typename T>
+* T max(T i1, T i2)
+* {
+*   return (i1 > i2) ? i1 : i2 //ternary operation
+* }
+* // T represents a variable- variable;
+* // can be int, float, double, etc.
+* // but all Ts must be the same variable type
+* 
+* template<typename T, typename U>
+* T max(T i1, U i2)
+* {
+*   return (i1 > i2) ? i1 : i2 //ternary operation
+* }
+* // using template like this allows for mixing variable types
+* // int, float | float, double | etc.
+*/
