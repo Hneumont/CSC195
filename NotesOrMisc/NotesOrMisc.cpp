@@ -262,3 +262,20 @@ int main()
     * ~myClass() // ~ distinguishes a destructor from a constructor
     * )
     */
+
+
+/*
+STREAMS
+istream - reads information from the console as a string and saves it to a pointed variable, casting to the proper type in the process
+ostream - reads information from user code and displays it onto the terminal
+*/
+
+
+/*
+* Overload
+* 
+*  : extends entire class
+*  :: extends class member (functions)
+* 
+* 
+*/
