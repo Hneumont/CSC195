@@ -1,41 +1,8 @@
 #include <iostream>
 #include <vector>
+#include "Circle.h"
+#include "Rectangle.h"
 using namespace std;
-
-class Shape {
-public:
-	Shape() {}
-	~Shape() {}
-	virtual float Area() = 0;
-};
-
-class Circle : public Shape {
-public:
-	Circle(float r) { m_radius = r; }
-	~Circle() {}
-	float Area() override {
-		return 3.14f * m_radius * m_radius;
-	}
-	void SetRadius(float radius) { m_radius = radius; }
-	float GetRadius() { return m_radius; }
-protected:
-	float m_radius;
-};
-
-class Rectangle : public Shape {
-public:
-	Rectangle(float w, float h) {
-		m_width = w;
-		m_height = h;
-	}
-	float Area() override {
-		return m_width * m_height;
-	}
-private:
-	float m_width;
-	float m_height;
-};
-
 int main() {
 	vector<Shape*> shapes;
 	Circle* c = new Circle(1.0f);
