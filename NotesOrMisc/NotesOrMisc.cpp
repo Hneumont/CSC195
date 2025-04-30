@@ -358,7 +358,7 @@ ostream - reads information from user code and displays it onto the terminal
 * private:
 *   T x, y;
 * public:
-*   TemplateClsas() : x{0}, y{0} {}
+*   TemplateClass() : x{0}, y{0} {}
 *   TemplateClass(T x, T y) : x{x}, y{y} {}
 * };
 * 
@@ -382,3 +382,54 @@ ostream - reads information from user code and displays it onto the terminal
 * {
 *   Array<string, 5> strAR;
 * };
+*/ 
+
+ 
+ 
+/*
+* Smart Pointers
+* A smart pointer can make pointers to work in a way that we don't need to explicitly call delete. A smart pointer is a wrapper class over a pointer
+* with an operator like * and -> overload.
+* 
+*
+* template<typename T>
+* class smart_ptr
+* {
+* public:   
+*    smart_ptr(T* ptr) : _ptr{ptr} {}
+*   ~smart_ptr() { if (_ptr) delete _ptr; }
+* 
+*   T& operator * () { return *_ptr; }
+*   T* operator & () { return _ptr }
+* 
+* private:
+*   T* _ptr{};
+* }
+* 
+* std::unique_ptr:
+* std::unique_ptr is a smart pointer that owns and manages another object through a pointer and disposes of that object when the unique_ptr goes out of
+* scope. the unique_ptr allows exactly one owner of the underlying pointer
+*/ 
+
+
+/*
+* BONUS:
+* int& add(int a, inst b)
+* {
+*   int result = 0;
+*   result = a + b;
+*   return result;
+* }
+* 
+* add(3,5); -> causes '8' to be stored with a reference in memory, reference stays after being destructed, wrapping in a class fixes this issue
+* 
+* int* add(int a, inst b)
+* {
+*   int result = 0;
+*   result = a + b;
+*   return &result;
+* }
+* 
+* stack = static, during compile time
+* heap = dynamic, during runtime
+*/

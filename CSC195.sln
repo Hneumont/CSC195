@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FailAssignment", "FailAssig
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FractionsAssignment", "FractionsAssignment\FractionsAssignment.vcxproj", "{E7863FDA-9586-4827-A6F8-FC430E863731}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-28-2025", "2-28-2025\2-28-2025.vcxproj", "{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{E7863FDA-9586-4827-A6F8-FC430E863731}.Release|x64.Build.0 = Release|x64
 		{E7863FDA-9586-4827-A6F8-FC430E863731}.Release|x86.ActiveCfg = Release|Win32
 		{E7863FDA-9586-4827-A6F8-FC430E863731}.Release|x86.Build.0 = Release|Win32
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Debug|x64.ActiveCfg = Debug|x64
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Debug|x64.Build.0 = Debug|x64
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Debug|x86.ActiveCfg = Debug|Win32
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Debug|x86.Build.0 = Debug|Win32
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Release|x64.ActiveCfg = Release|x64
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Release|x64.Build.0 = Release|x64
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Release|x86.ActiveCfg = Release|Win32
+		{CAC074C1-355D-4DE4-892E-3FFA778F3DB6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
